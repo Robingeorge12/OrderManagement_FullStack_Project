@@ -16,7 +16,8 @@
 11. Production quantity updation can be placed only by the Admin/Seller.
 12. Sorting, Multiple Filtration, pagination everything comes from the backend only.
 13. using Redux Toolkit for managing data.
-14. Everything in my ODRMAT APP is dynamic and functional
+14. By using Chart JS, I have graphically shown all Delivered, Returned, Cancelled, and Orderd orders amounts. 
+15. Everything in my ODRMAT APP is dynamic and functional
 
 ## Backend API and Its end Points
 
