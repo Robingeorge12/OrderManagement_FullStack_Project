@@ -1,0 +1,19 @@
+.modal_but{
+    width: auto;
+    padding: 8px 8px;
+    border-radius: 4px;
+    color: #19ff93;
+    background-color: rgb(4, 62, 62);
+    border: none;
+}
+.production-ip{
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: flex-start; */
+      gap: 10px;
+      text-align: justify;
+      color: chocolate;
+    gap: 10px;
+}

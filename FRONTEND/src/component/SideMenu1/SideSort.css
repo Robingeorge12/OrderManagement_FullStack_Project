@@ -1,0 +1,19 @@
+.side-sort{
+       /* border: 1px solid red; */
+       width: 300px;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+}
+
+@media all and (min-width: 320px) and (max-width: 525px){
+
+    .side-sort{
+        margin: auto;
+        /* border: 1px solid red;  */
+        width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

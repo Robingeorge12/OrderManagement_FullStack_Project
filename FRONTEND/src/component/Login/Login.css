@@ -1,0 +1,18 @@
+.login-cont{
+    /* border: 2px solid red; */
+
+ }
+ .form-login-cont{
+    border-bottom: 4px solid cyan;
+    border-left: 4px solid cyan;
+    border-right: 2px solid rgb(135, 232, 232);
+    border-top: 2px solid rgb(135, 232, 232);
+    width: 400px;
+    background-color: aliceblue;
+    /* position: relative; */
+ }
+ .login-btn{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* margin-left: -282px; */
+ }

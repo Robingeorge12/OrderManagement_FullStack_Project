@@ -1,0 +1,114 @@
+.modal_but{
+    width: auto;
+    padding: 8px 8px;
+    border-radius: 4px;
+    color: #19ff93;
+    background-color: rgb(4, 62, 62);
+    border: none;
+}
+.production-ip{
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: flex-start; */
+      gap: 10px;
+      text-align: justify;
+      color: chocolate;
+    gap: 10px;
+}
+.loadingAd{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aqua;
+}
+.lodAdd{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    left:50%;
+}
+
+.isError{
+
+
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    left:50%;
+}
+
+
+
+@media all and (min-width: 525px) and (max-width: 768px){
+
+
+    .loadingAd{
+    position: absolute;
+    top: 50%;
+    left: 21%;
+}
+
+.lodAdd{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left:50%;
+    font-weight: 700;
+
+}
+.isError{
+
+          display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left:50%;
+    font-weight: 700;
+}
+
+
+}
+
+@media all and (min-width: 320px) and (max-width: 525px){
+
+.loadingAd{
+       position: absolute;
+    top: 50%; 
+    left: 2%;
+    width: 96%;
+}
+
+.lodAdd{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left:50%;
+    font-weight: 700;
+    
+
+
+}
+
+.isError{
+
+          display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left:50%;
+    font-weight: 700;
+}
+
+}

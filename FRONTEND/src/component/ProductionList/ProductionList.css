@@ -1,0 +1,17 @@
+.productionlist-cont{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+gap: 20px;
+}
+
+.lod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    left:50%;
+  }

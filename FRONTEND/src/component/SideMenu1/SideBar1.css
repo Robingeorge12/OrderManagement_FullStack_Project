@@ -1,0 +1,23 @@
+.sidebar1{
+
+    /* border: 1px solid red;  */
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+        .filt-one{
+    font-size: 14px;
+    color: #b63687;
+    padding-left: 4px;
+}
+
+@media all and (min-width: 320px) and (max-width: 525px){
+
+    .sidebar1{
+margin: auto;
+        /* border: 1px solid red;  */
+        width: 280px;
+   
+    }
+}

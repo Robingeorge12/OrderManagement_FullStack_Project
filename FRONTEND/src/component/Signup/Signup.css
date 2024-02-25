@@ -1,0 +1,25 @@
+ .signup-cont{
+    /* border: 2px solid red; */
+
+ }
+ .form-cont{
+    border-bottom: 4px solid cyan;
+    border-left: 4px solid cyan;
+    border-right: 2px solid rgb(135, 232, 232);
+    border-top: 2px solid rgb(135, 232, 232);
+    width: 400px;
+    background-color: aliceblue;
+    /* position: relative; */
+ }
+ .signup-btn{ 
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* margin-left: -282px; */
+ }
+ .toast-div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   top: 25vh;
+ }

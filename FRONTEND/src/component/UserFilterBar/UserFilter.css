@@ -1,0 +1,12 @@
+.userfilter-cont{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.filt-one{
+    font-size: 14px;
+    color: #b63687;
+    padding-left: 4px;
+}

@@ -1,0 +1,30 @@
+.nav-head{
+
+}
+.nav-h1{
+  font-size: 28px;
+      background: -webkit-linear-gradient(#40d95eed, #1823b8,#2fe6ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+.nav-icon{
+
+} 
+.nav-im{
+
+  width: 80px;
+  height: 90%;
+}
+.tt{
+
+}
+.bor{
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  border: 1px solid rgb(220, 206, 84);
+  margin: 0px 5px;
+  object-fit: cover;
+  
+}

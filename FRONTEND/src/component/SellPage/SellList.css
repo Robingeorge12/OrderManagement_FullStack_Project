@@ -1,0 +1,29 @@
+.selllist-cont{
+    /* border: 1px solid red; */
+    width:100%;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin: auto; */
+}
+.sellist-head{
+    background: -webkit-linear-gradient(#0e2e4f, #329a96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+
+   
+}
+
+.selllist-title{
+
+    background: -webkit-linear-gradient(#523892, #d42a2a);
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#sellbtn{
+  
+ font-size: large;
+    color: #212529;
+    background-image: linear-gradient(to bottom right, #0b0b4a, rgb(0 255 253), #091e43);
+} 

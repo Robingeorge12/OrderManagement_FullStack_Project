@@ -1,0 +1,124 @@
+.home-cont{
+    /* border: 2px solid maroon; */
+    width: 100% !important;
+    height: auto;
+}
+.top-bar{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 70px;
+   /* //rgb(215 250 249)*/
+    background-color:  #ade1ff ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle-bar{
+
+    /* border: 1px solid blue; */
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(116, 76, 24); */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+
+}
+
+.bottom-bar{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content{
+    /* border: 1px solid red; */
+    height: 120px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap:5px; 
+    padding-top: 10px;
+    align-items: flex-start;
+}
+.middle-icon{
+    /* border: 1px solid rgb(93, 0, 255); */
+    height: 120px;
+    width: 40%;
+    display: flex;
+  
+    padding-top: 10px;
+    align-items: flex-start;
+    justify-content: end;
+    color: #0a50b6;
+    font-weight: 700;
+} 
+.lodHome{
+      position: absolute;
+    left: 50%;
+  }
+
+@media all and (min-width:1440px) and (max-width:1640px){
+
+ 
+}
+
+@media all and (min-width:992px) and (max-width:1440px){
+
+ 
+}
+
+@media all and (min-width:768px) and (max-width:992px){
+
+ 
+}
+
+@media all and (min-width:320px) and (max-width:575px){
+
+    .home-cont{
+        /* border: 2px solid maroon; */
+        width: 100% !important;
+        height: auto;
+    }
+    .top-bar{
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 50px;
+        /* background-color: rgb(221, 250, 215); */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-top: 151px; */
+    }
+    .middle-bar{
+    
+        /* border: 1px solid blue; */
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(116, 76, 24); */
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    
+    }
+
+}
+@media all and (min-width:320px) and (max-width:425px){
+
+    .bottom-bar{
+/* border: 1px solid red; */
+width: 100%;
+height: auto;
+    }
+ 
+}
