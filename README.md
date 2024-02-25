@@ -21,41 +21,41 @@
 ## Backend API and Its end Points
 
 A. Sign up and  Login API => "/signup"
-  https://steph-ordermanagement.onrender.com/ => "/add_user",signUp
-  https://steph-ordermanagement.onrender.com/ => "/signin",signin
+ 1. https://steph-ordermanagement.onrender.com/ => "/add_user",signUp
+ 2. https://steph-ordermanagement.onrender.com/ => "/signin",signin
 
   
 B. Order API  => "/order"
- GET  all orders =  https://steph-ordermanagement.onrender.com/ => "/",getOrders
- GET  all orders in Dashboard =  https://steph-ordermanagement.onrender.com/ => "/home",getOrdersHome
- GET  Only User respective orders =  https://steph-ordermanagement.onrender.com/ => "/user_order_data",isAuth,userOnly_orders
- GET  all orders in User List  =  https://steph-ordermanagement.onrender.com/ => "/:id",isAuth,get_buyer_item_data
- POST  filter only User List page all orders  =  https://steph-ordermanagement.onrender.com/ => "/filter_user",isAuth,filter_OnlyUser_order
- POST  post orders by user =  https://steph-ordermanagement.onrender.com/ => "/add",isAuth,postOrders  
- PATCH change order status by Only Admin =  https://steph-ordermanagement.onrender.com/ => "/edit/:id",isAuth,isAdmin,editOrders
- PATCH  change order status by Only user =  https://steph-ordermanagement.onrender.com/ => "/cancel/:id",isAuth,cancelOrders
- DELETE  delete order by only Admin =  https://steph-ordermanagement.onrender.com/ => "/remove/:id",isAuth,isAdmin,removeOrders
- DELETE  delete order by only User  =  https://steph-ordermanagement.onrender.com/ => "/removeByUSer/:id", isAuth, removeByUSer
- POST filter User Page =  https://steph-ordermanagement.onrender.com/ => "/filter", filter_order
+ 1. GET  all orders =  https://steph-ordermanagement.onrender.com/ => "/",getOrders
+ 2. GET  all orders in Dashboard =  https://steph-ordermanagement.onrender.com/ => "/home",getOrdersHome
+ 3. GET  Only User respective orders =  https://steph-ordermanagement.onrender.com/ => "/user_order_data",isAuth,userOnly_orders
+ 4. GET  all orders in User List  =  https://steph-ordermanagement.onrender.com/ => "/:id",isAuth,get_buyer_item_data
+ 5. POST  filter only User List page all orders  =  https://steph-ordermanagement.onrender.com/ => "/filter_user",isAuth,filter_OnlyUser_order
+ 6. POST  post orders by user =  https://steph-ordermanagement.onrender.com/ => "/add",isAuth,postOrders  
+ 7. PATCH change order status by Only Admin =  https://steph-ordermanagement.onrender.com/ => "/edit/:id",isAuth,isAdmin,editOrders
+ 8. PATCH  change order status by Only user =  https://steph-ordermanagement.onrender.com/ => "/cancel/:id",isAuth,cancelOrders
+ 9. DELETE  delete order by only Admin =  https://steph-ordermanagement.onrender.com/ => "/remove/:id",isAuth,isAdmin,removeOrders
+ 10. DELETE  delete order by only User  =  https://steph-ordermanagement.onrender.com/ => "/removeByUSer/:id", isAuth, removeByUSer
+ 11. POST filter User Page =  https://steph-ordermanagement.onrender.com/ => "/filter", filter_order
        
  
 C. Item API  =>  "/item"
   
- GET  all item   =  https://steph-ordermanagement.onrender.com => "/",isAuth,getAllItem
- POST  add new item by Admin /Seller  =  https://steph-ordermanagement.onrender.com/ => "/add_item",isAuth,isAdmin,addingItem
- PATCH  edit item by Admin /Seller =  https://steph-ordermanagement.onrender.com/ => "/update/:id",isAuth,isAdmin,edit_item_data
- PATCH order required quantity by user =  https://steph-ordermanagement.onrender.com/ => "/updateQty/:id",isAuth,update_quantity
- PATCH  reverse quantity if Admin cancel or return order =  https://steph-ordermanagement.onrender.com/ => "/editCancel_quant/:id",isAuth,isAdmin,update_Cancel_quantity
- PATCH  reverse quantity if User cancel or return order =  https://steph-ordermanagement.onrender.com/ => "/editCancel_userQuant/:id",isAuth,update_Cancel_quantityByUser
- PATCH  add production request quantity by Admin /Seller =  https://steph-ordermanagement.onrender.com/ =>"/production_Quantity/:id",isAuth,isAdmin,production_AddQuantity
- DELETE  delete product by Admin =  https://steph-ordermanagement.onrender.com/ => "/remove/:id", isAuth, isAdmin, delete_item
+ 1. GET  all item   =  https://steph-ordermanagement.onrender.com => "/",isAuth,getAllItem
+ 2. POST  add new item by Admin /Seller  =  https://steph-ordermanagement.onrender.com/ => "/add_item",isAuth,isAdmin,addingItem
+ 3. PATCH  edit item by Admin /Seller =  https://steph-ordermanagement.onrender.com/ => "/update/:id",isAuth,isAdmin,edit_item_data
+ 4. PATCH order required quantity by user =  https://steph-ordermanagement.onrender.com/ => "/updateQty/:id",isAuth,update_quantity
+ 5. PATCH  reverse quantity if Admin cancel or return order =  https://steph-ordermanagement.onrender.com/ => "/editCancel_quant/:id",isAuth,isAdmin,update_Cancel_quantity
+ 6. PATCH  reverse quantity if User cancel or return order =  https://steph-ordermanagement.onrender.com/ => "/editCancel_userQuant/:id",isAuth,update_Cancel_quantityByUser
+ 7. PATCH  add production request quantity by Admin /Seller =  https://steph-ordermanagement.onrender.com/ =>"/production_Quantity/:id",isAuth,isAdmin,production_AddQuantity
+ 8. DELETE  delete product by Admin =  https://steph-ordermanagement.onrender.com/ => "/remove/:id", isAuth, isAdmin, delete_item
 
 D. Production => "/production"
 
 
- GET  all productiom request   =  https://steph-ordermanagement.onrender.com => "/",get_Production
- POST  post production request by User / Admin =  https://steph-ordermanagement.onrender.com/ => "/receive",isAuth,product_Order
- DELETE  delete production request by Admin =  https://steph-ordermanagement.onrender.com/ => "/delete/:id",isAuth,isAdmin,product_Del
+ 1. GET  all productiom request   =  https://steph-ordermanagement.onrender.com => "/",get_Production
+ 2. POST  post production request by User / Admin =  https://steph-ordermanagement.onrender.com/ => "/receive",isAuth,product_Order
+ 3. DELETE  delete production request by Admin =  https://steph-ordermanagement.onrender.com/ => "/delete/:id",isAuth,isAdmin,product_Del
 
 
   
