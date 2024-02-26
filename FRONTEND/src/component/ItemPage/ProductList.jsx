@@ -2,50 +2,59 @@ import React, { useState } from "react";
 import "./ProductList.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/js/bootstrap.bundle.min";
 // import { get_All_Item } from '../../Redux/action';
 import { useEffect } from "react";
 
 import { del_single_Item, get_user_item_data } from "../../Redux/action";
 
-function ProductList({ product, failedReq, isError, isLoading, isAddProduct }) {
-
-const [bool,setBool] = useState(false)
+function ProductList({
+  product,
+  
+  failedReq,
+  isError,
+  isLoading,
+  isAddProduct,
+}) {
+  const [bool, setBool] = useState(false);
+  const [showToast, setShowToast] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const {users} = useSelector((state) => {
-    return state.user
-  })
+  const { users } = useSelector((state) => {
+    return state.user;
+  });
+const { delReq } = useSelector((state) => {
+  return state.item;
+});
 
-  const token = JSON.parse(localStorage.getItem("token"))
-const user =  JSON.parse(localStorage.getItem("user"))
-const role = user.role;
+  const token = JSON.parse(localStorage.getItem("token"));
+  const user = JSON.parse(localStorage.getItem("user"));
+  const role = user.role;
 
-  console.log(users);
+  console.log(delReq);
 
   const handleBuy = async (id) => {
     try {
       await dispatch(get_user_item_data(id));
-     
+
       navigate("/order");
     } catch (error) {
-      
       console.error(error);
     }
   };
 
-const handleDelete = (id)=>{
+  const handleDelete = (id) => {
     // console.log(id);
-    if(role==="buyer"){
-      setBool(!bool)
+    if (role === "buyer") {
+      setBool(!bool);
       // return alert("Only Admin can delete product")
     }
- if(role==="seller" || role==="admin"){
+    if (role === "seller" || role === "admin") {
+      dispatch(del_single_Item(id));
+    }
+  };
 
-    dispatch(del_single_Item(id))
- }
-}
-
-  
   const quantColor = (quantity) => {
     // console.log(quantity);
     if (+quantity === 0) {
@@ -60,43 +69,85 @@ const handleDelete = (id)=>{
       return ""; // Default case
     }
   };
-  
-const refreshToast = ()=>{
-  setBool(false)
-  // window.location.reload()
-}
 
+  const refreshToast = () => {
+    setBool(false);
+    // window.location.reload()
+  };
 
-if(bool){
-
-  return <div className='toast-item'>
-  
-  <div className="toast fade show toast-item-div" role="alert" aria-live="assertive" aria-atomic="true">
-        <div className="toast-body">
-           {"Only Admin can delete product"}
-          <div className="mt-2 pt-2 border-top">
-           
-            <button type="button" className="btn btn-secondary btn-sm" onClick={refreshToast} data-bs-dismiss="toast">Close</button>
+  if (bool) {
+    return (
+      <div className="toast-item">
+        <div
+          className="toast fade show toast-item-div"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div className="toast-body">
+            {"Only Admin can delete product"}
+            <div className="mt-2 pt-2 border-top">
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={refreshToast}
+                data-bs-dismiss="toast"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-     
-  
+    );
+  }
+
+  if (isLoading) {
+    return (
+      <div
+        className="spinner-border  text-success lod"
+        style={{ width: "5rem", height: "5rem" }}
+        role="status"
+      >
+        <span className="visually-hidden">Loading...</span>
       </div>
+    );
+  }
 
+  const refreshToast3 = ()=>{
+window.location.reload();
+  }
+  if (delReq) {
+    return (
+     <div className="toast-item">
+        <div
+          className="toast fade show "
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div className="toast-body bg-danger bg-opacity-10">
+            {delReq}
+            <div className="mt-2 pt-2 border-top">
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={refreshToast3}
+                data-bs-dismiss="toast"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    );
 }
-
-if(isLoading){
-
-  return(
-    <div className="spinner-border  text-success lod" style={{width: "5rem", height: "5rem"}} role="status">
-    <span className="visually-hidden">Loading...</span>
-  </div>
-  )
-}
-
   return (
     <div className="d-flex flex-column mt-2 pro-cont">
+ 
+
       <p className="text-center fw-bold mt-2 pro-head">Product List</p>
       <div className="table-responsive table-cont">
         <table className="table table-hover">

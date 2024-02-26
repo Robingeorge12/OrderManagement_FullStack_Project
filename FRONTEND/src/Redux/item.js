@@ -1,12 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { UpdateQuantity, UpdateQuantity_ByAdmin_Cancel, del_single_Item, get_All_Item, get_user_item_data, post_New_Item, production_Quantity_Update } from "./action";
+import {
+  UpdateQuantity, UpdateQuantity_ByAdmin_Cancel,
+  del_single_Item, get_All_Item, get_user_item_data,
+  post_New_Item, production_Quantity_Update
+} from "./action";
 
 const initialState = {
     product: [],
   isLoading: false,
   isError: false, 
   isAddProduct:"",
-  failedReq:{},
+  failedReq: {},
+  delReq:"",
   order_buyer:[],
   order_product :[]
 };
@@ -47,7 +52,8 @@ export const itemSlice = createSlice({
 
       state.isLoading = false;
       state.isError = false;
-      console.log(action)
+      state.delReq = action.payload
+      console.log(action.payload)
 
     } ).addCase(del_single_Item.rejected,(state,action)=>{
 

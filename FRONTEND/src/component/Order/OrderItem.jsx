@@ -113,7 +113,7 @@ function OrderItem() {
     }
   };
 
-  console.log(data.product_id);
+  // console.log(data.product_id);
   let role = JSON.parse(localStorage.getItem("user")).role;
   
 

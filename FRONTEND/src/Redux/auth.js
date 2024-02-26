@@ -53,7 +53,6 @@ export const authSlice = createSlice({
             state.users = action.payload.login_user;
             console.log(action.payload.login_user)
             localStorage.setItem("user",JSON.stringify(action.payload.login_user))
-
             localStorage.setItem("token",JSON.stringify(token))
 
             

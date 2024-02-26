@@ -193,7 +193,7 @@ export const del_single_Item = createAsyncThunk(
         `https://steph-ordermanagement.onrender.com/item/remove/${payload}`,
         auth
       );
-      console.log(res);
+      console.log(res.data.message);
 
       return res.data.message;
     } catch (er) {
